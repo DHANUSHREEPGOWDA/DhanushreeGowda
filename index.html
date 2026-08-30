@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhanushree P Gowda — Electronics & Communication Engineer | AI & Software Developer</title>
+  <meta name="description" content="Portfolio of Dhanushree P Gowda, Electronics & Communication Engineer specializing in Generative AI, Embedded IoT Systems, and Software Development.">
+  
+  <!-- Modern Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="loader-content">
+      <div class="loader-badge">
+        <span class="pulse-dot"></span>
+        <span class="loader-label">INITIALIZING PORTFOLIO</span>
+      </div>
+      <div class="loader-counter" id="loader-percent">0%</div>
+      <div class="loader-progress-track">
+        <div class="loader-progress-bar" id="progress-bar"></div>
+      </div>
+      <div class="loader-status" id="loader-status">Buffering 300 cinematic frames...</div>
+    </div>
+  </div>
+
+  <!-- Background Pinned Canvas Layer -->
+  <div class="canvas-fixed-wrapper">
+    <canvas id="animation-canvas"></canvas>
+    <div class="canvas-ambient-vignette"></div>
+    <div class="canvas-scrim" id="canvas-scrim"></div>
+  </div>
+
+  <!-- Floating Frame Counter Badge -->
+  <div class="frame-tag-floating" id="frame-indicator">
+    FRAME <span id="current-frame-text">001</span> / 300
+  </div>
+
+  <!-- Page Content Structure -->
+  <div class="page-wrapper">
+
+    <!-- Top Header Bar -->
+    <header class="site-header">
+      <div class="header-left">
+        <span class="role-tag">ECE ENGINEER</span>
+        <span class="role-divider">/</span>
+        <span class="role-tag">AI & SOFTWARE DEVELOPER</span>
+      </div>
+      <div class="header-right">
+        <a href="#contact" class="availability-badge">
+          <span class="live-dot"></span>
+          <span>AVAILABLE FOR OPPORTUNITIES</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- SECTION 1: HERO VIEWPORT (With Giant Red PORTFOLIO & Scrubbing Canvas) -->
+    <section class="hero-pinned-container" id="hero">
+      
+      <!-- Huge Red Background Word -->
+      <div class="hero-giant-bg-text" id="hero-bg-text">PORTFOLIO</div>
+
+      <!-- Foreground Model Cutout Layer (Places the Model IN FRONT of the word PORTFOLIO) -->
+      <div class="hero-model-layer" id="hero-model-layer">
+        <img src="assets/hero_model_cutout.png" alt="Dhanushree P Gowda" class="hero-model-img">
+      </div>
+
+      <div class="hero-grid">
+        
+        <!-- Left Hero Area -->
+        <div class="hero-col hero-left" id="hero-left">
+          <div class="greeting-script">Hello, I'm</div>
+          <h1 class="hero-name">
+            <span>DHANUSHREE</span>
+            <span>P GOWDA</span>
+          </h1>
+          <div class="hero-subtitle">ELECTRONICS & COMMUNICATION ENGINEER | AI DEVELOPER</div>
+          <p class="hero-bio">
+            Innovative and passionate engineering student at GSSIETW institute. Eager to leverage technical skills in Generative AI, Embedded IoT, and full-stack software to contribute to pioneering projects.
+          </p>
+          <div class="hero-badge">
+            <span class="globe-icon">📍</span>
+            <span>MYSORE, INDIA • AVAILABLE WORLDWIDE</span>
+          </div>
+        </div>
+
+        <!-- Center Clear Space for Video Canvas Model -->
+        <div class="hero-center-spacer"></div>
+
+        <!-- Right Hero Area -->
+        <div class="hero-col hero-right" id="hero-right">
+          <div class="hero-quote-pill">
+            <p>Engineering intelligent hardware and AI-driven software solutions.</p>
+          </div>
+          
+          <div class="hero-stats-box">
+            <div class="stat-item">
+              <div class="stat-num">8.17</div>
+              <div class="stat-label">CGPA (B.E. ECE)<br>GSSIETW MYSORE</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-num">3<span class="plus">+</span></div>
+              <div class="stat-label">FLAGSHIP IOT &<br>AI PROJECTS</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-num">92<span class="plus">%</span></div>
+              <div class="stat-label">PRE-UNIVERSITY<br>DISTINCTION</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Scroll Cue -->
+      <div class="scroll-cue" id="scroll-cue">
+        <div class="mouse-icon">
+          <div class="wheel-dot"></div>
+        </div>
+        <span class="scroll-label">SCROLL TO EXPLORE</span>
+      </div>
+
+    </section>
+
+    <!-- Hero Scroll Scrubbing Track -->
+    <div class="hero-scroll-spacer" id="hero-track"></div>
+
+    <!-- MAIN CONTENT SECTIONS -->
+    <main class="content-sections">
+
+      <!-- SECTION 2: SELECTED PROJECTS (From Resume) -->
+      <section class="section projects-section" id="projects">
+        <div class="section-container">
+          <div class="section-header">
+            <div class="section-title-wrap">
+              <span class="section-tag">ENGINEERING PORTFOLIO</span>
+              <h2 class="section-title">FEATURED PROJECTS</h2>
+            </div>
+            <a href="#contact" class="btn-link">
+              <span>GET IN TOUCH</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+
+          <div class="projects-grid">
+            
+            <!-- Project 1: Safety Auto Braking System -->
+            <article class="project-card reveal-on-scroll">
+              <div class="project-img-box">
+                <img src="assets/safety_braking.jpg" alt="Safety Auto Braking System for Vehicles in Hill Stations" loading="lazy">
+                <div class="project-overlay">
+                  <span class="view-pill">MEMS Sensor Telemetry</span>
+                </div>
+              </div>
+              <div class="project-meta">
+                <div class="project-index">01</div>
+                <div class="project-info">
+                  <h3 class="project-name">SAFETY AUTO BRAKING SYSTEM</h3>
+                  <p class="project-category">MEMS SENSORS • VEHICLE AUTOMATION</p>
+                  <p class="project-summary">Designed an automated braking system for hill station terrains using MEMS sensors to detect steep slopes and obstacles, preventing accidents.</p>
+                </div>
+                <div class="project-arrow">→</div>
+              </div>
+            </article>
+
+            <!-- Project 2: Panic Badge -->
+            <article class="project-card reveal-on-scroll">
+              <div class="project-img-box">
+                <img src="assets/panic_badge.jpg" alt="Panic Badge Smart Wearable Safety Badge" loading="lazy">
+                <div class="project-overlay">
+                  <span class="view-pill">WinTechathon 2025 Shortlisted</span>
+                </div>
+              </div>
+              <div class="project-meta">
+                <div class="project-index">02</div>
+                <div class="project-info">
+                  <h3 class="project-name">PANIC BADGE (SMART WEARABLE)</h3>
+                  <p class="project-category">RENESAS RA MCU • IOT EMERGENCY SOS</p>
+                  <p class="project-summary">Engineered a wearable emergency alert system using Renesas RA microcontroller and e2studio. Shortlisted for demo presentation at WinTechathon 2025.</p>
+                </div>
+                <div class="project-arrow">→</div>
+              </div>
+            </article>
+
+            <!-- Project 3: AI-Powered IoT Plant Health Monitoring -->
+            <article class="project-card reveal-on-scroll">
+              <div class="project-img-box">
+                <img src="assets/plant_ai.jpg" alt="AI-Powered IoT Plant Health Monitoring System" loading="lazy">
+                <div class="project-overlay">
+                  <span class="view-pill">Computer Vision AI & IoT</span>
+                </div>
+              </div>
+              <div class="project-meta">
+                <div class="project-index">03</div>
+                <div class="project-info">
+                  <h3 class="project-name">AI-POWERED IOT PLANT MONITOR</h3>
+                  <p class="project-category">ESP32 • AI LEAF DISEASE DETECTION</p>
+                  <p class="project-summary">Smart agriculture system using environmental sensors & ESP32 for automated irrigation with integrated AI-based leaf disease detection.</p>
+                </div>
+                <div class="project-arrow">→</div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: EDUCATION & SKILLS + INTERNSHIP EXPERIENCE + QUOTE -->
+      <section class="section skills-process-section" id="skills-process">
+        <div class="section-container">
+          <div class="skills-process-grid">
+
+            <!-- Column 1: Education & Skills -->
+            <div class="panel-card reveal-on-scroll">
+              <h3 class="panel-title">EDUCATION & SKILLS</h3>
+              
+              <div class="edu-block">
+                <h4 class="sub-heading">EDUCATION</h4>
+                
+                <div class="edu-item">
+                  <div class="edu-item-header">
+                    <span class="edu-degree">B.E. in Electronics & Communication</span>
+                    <span class="edu-year">2022 – 2026</span>
+                  </div>
+                  <div class="edu-school">GSSS Institute of Engineering & Technology for Women (GSSIETW), Mysore</div>
+                  <div class="edu-meta-tag">CGPA: 8.17 • 4th Year (8th Sem) • USN: 4GW22EC040</div>
+                </div>
+
+                <div class="edu-item">
+                  <div class="edu-item-header">
+                    <span class="edu-degree">12th Standard / Pre-University</span>
+                    <span class="edu-year">2021</span>
+                  </div>
+                  <div class="edu-school">Gopalswamy SV PU College, Mysore</div>
+                  <div class="edu-meta-tag">Percentage: 92% (Distinction)</div>
+                </div>
+
+                <div class="edu-item">
+                  <div class="edu-item-header">
+                    <span class="edu-degree">10th Standard / SSLC</span>
+                    <span class="edu-year">2019</span>
+                  </div>
+                  <div class="edu-school">Sadvidya High School, Mysore</div>
+                  <div class="edu-meta-tag">Percentage: 91.8%</div>
+                </div>
+              </div>
+
+              <div class="skills-block">
+                <h4 class="sub-heading">TECHNICAL SKILLS</h4>
+                <div class="skills-chips">
+                  <span class="skill-chip">PYTHON</span>
+                  <span class="skill-chip">C / C++</span>
+                  <span class="skill-chip">GENERATIVE AI</span>
+                  <span class="skill-chip">PROMPT ENGINEERING</span>
+                  <span class="skill-chip">HTML / CSS</span>
+                  <span class="skill-chip">JAVASCRIPT</span>
+                  <span class="skill-chip">AI & ML BASICS</span>
+                  <span class="skill-chip">EMBEDDED IOT</span>
+                  <span class="skill-chip">ESP32</span>
+                  <span class="skill-chip">RENESAS RA</span>
+                  <span class="skill-chip">ALTIUM PCB DESIGN</span>
+                  <span class="skill-chip">E2STUDIO</span>
+                </div>
+
+                <h4 class="sub-heading" style="margin-top: 20px;">SOFT SKILLS</h4>
+                <div class="skills-chips">
+                  <span class="skill-chip soft">COMMUNICATION</span>
+                  <span class="skill-chip soft">PROBLEM SOLVING</span>
+                  <span class="skill-chip soft">TEAM COLLABORATION</span>
+                  <span class="skill-chip soft">TIME MANAGEMENT</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2: Internship Experience & Achievements -->
+            <div class="panel-card reveal-on-scroll">
+              <h3 class="panel-title">EXPERIENCE & HONORS</h3>
+              
+              <div class="experience-block">
+                <h4 class="sub-heading">INTERNSHIP EXPERIENCE</h4>
+                
+                <div class="intern-card">
+                  <div class="intern-header">
+                    <div class="intern-role">Android Developer Intern (Generative AI)</div>
+                    <div class="intern-company">MindMatrix</div>
+                  </div>
+                  <div class="intern-duration">February 2026 – Present</div>
+                  <ul class="intern-bullets">
+                    <li>Developing and optimizing Android applications integrating Generative AI capabilities.</li>
+                    <li>Implementing API integrations, prompt engineering workflows, and system performance enhancements.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="achieve-block" style="margin-top: 28px;">
+                <h4 class="sub-heading">ACHIEVEMENTS & CERTIFICATIONS</h4>
+                
+                <div class="achieve-item">
+                  <div class="achieve-icon">🏆</div>
+                  <div class="achieve-text">
+                    <strong>WinTechathon 2025 Finalist</strong>: 'Panic Badge' project shortlisted for live demo presentation at Women in Tech Conference, Radisson Blu, Bangalore.
+                  </div>
+                </div>
+
+                <div class="achieve-item">
+                  <div class="achieve-icon">☁️</div>
+                  <div class="achieve-text">
+                    <strong>AWS Certified</strong>: Completed Machine Learning Foundation certification from Amazon Web Services.
+                  </div>
+                </div>
+
+                <div class="achieve-item">
+                  <div class="achieve-icon">⚡</div>
+                  <div class="achieve-text">
+                    <strong>Altium Global Scholar</strong>: Certified in PCB Design using Altium Designer software.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 3: Software Engineer Quote Card -->
+            <div class="crimson-quote-card reveal-on-scroll">
+              <div class="quote-icon">“</div>
+              <p class="quote-text">
+                Any fool can write code that a computer can understand. Good software engineers write code and build intelligent systems that humans can understand and elevate.
+              </p>
+              <div class="quote-signature">Dhanushree</div>
+              <div class="quote-footer-banner">
+                ENGINEERING INTELLIGENCE • SHAPING THE FUTURE
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: LET'S WORK TOGETHER / CONTACT -->
+      <footer class="section contact-section" id="contact">
+        <div class="section-container">
+          <div class="contact-grid">
+
+            <!-- Left Info Column -->
+            <div class="contact-left reveal-on-scroll">
+              <span class="section-tag">GET IN TOUCH</span>
+              <h2 class="contact-title">LET'S CONNECT &<br>COLLABORATE</h2>
+              <p class="contact-description">
+                Eager to contribute technical skills and creative problem-solving abilities to pioneering AI, software, and embedded hardware engineering projects.
+              </p>
+
+              <div class="contact-status-pill">
+                <span class="live-dot"></span>
+                <span>OPEN FOR ENGINEERING ROLES & PROJECTS</span>
+              </div>
+
+              <div class="contact-cards-list">
+                <!-- Phone -->
+                <a href="tel:+919380823186" class="contact-link-card">
+                  <span class="card-icon">📞</span>
+                  <span class="card-text">+91 9380823186</span>
+                  <span class="card-action">Call / Copy</span>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:dhanushreegowda30@gmail.com" class="contact-link-card" id="email-card">
+                  <span class="card-icon">✉️</span>
+                  <span class="card-text">dhanushreegowda30@gmail.com</span>
+                  <span class="card-action">Copy Email</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/dhanushree-gowda-447b52256" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                  <span class="card-icon">🔗</span>
+                  <span class="card-text">linkedin.com/in/dhanushree-gowda-447b52256</span>
+                  <span class="card-action">Connect</span>
+                </a>
+
+                <!-- Location -->
+                <div class="contact-link-card static">
+                  <span class="card-icon">📍</span>
+                  <span class="card-text">Mysore, Karnataka, India</span>
+                </div>
+              </div>
+
+              <!-- Hobbies & Languages -->
+              <div class="personal-details-row">
+                <div class="detail-group">
+                  <span class="detail-label">LANGUAGES:</span>
+                  <span class="detail-val">English, Hindi, Kannada</span>
+                </div>
+                <div class="detail-group">
+                  <span class="detail-label">HOBBIES:</span>
+                  <span class="detail-val">Sketching, Painting, Yoga</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Workspace Visual -->
+            <div class="contact-right reveal-on-scroll">
+              <div class="workspace-showcase">
+                <img src="assets/workspace.jpg" alt="Dhanushree's Engineering & AI Workspace" loading="lazy">
+                <div class="workspace-banner">
+                  <div class="banner-title">EMBEDDED HARDWARE & GENERATIVE AI</div>
+                  <div class="banner-sub">FROM ALGORITHMS TO PHYSICAL INNOVATION</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Copyright & Socials -->
+          <div class="footer-bottom">
+            <div class="copyright">© 2026 DHANUSHREE P GOWDA. ALL RIGHTS RESERVED.</div>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/dhanushree-gowda-447b52256" target="_blank" rel="noopener noreferrer" class="social-link">LINKEDIN</a>
+              <a href="mailto:dhanushreegowda30@gmail.com" class="social-link">EMAIL</a>
+              <a href="tel:+919380823186" class="social-link">PHONE</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
